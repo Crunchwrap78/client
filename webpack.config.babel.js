@@ -38,6 +38,7 @@ const productionPlugin = new webpack.DefinePlugin({
 const developmentConfig = {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
+    contentBase: path.join(__dirname, 'public'),
     inline: true,
     progress: true,
   },
